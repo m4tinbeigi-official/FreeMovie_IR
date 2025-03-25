@@ -92,13 +92,13 @@ async function getMovieDetails() {
         }
 
         // Update meta tags and title with TMDb data and OMDB poster
-        document.getElementById('meta-title').textContent = `${title} - فیری مووی`;
-        document.querySelector('meta[name="description"]').setAttribute('content', movieData.overview || `جزئیات و دانلود فیلم ${title} در فیری مووی.`);
-        document.querySelector('meta[property="og:title"]').setAttribute('content', `${title} - فیری مووی`);
-        document.querySelector('meta[property="og:description"]').setAttribute('content', movieData.overview || 'جزئیات و دانلود فیلم در فیری مووی.');
+        document.getElementById('meta-title').textContent = `${title} - فری مووی`;
+        document.querySelector('meta[name="description"]').setAttribute('content', movieData.overview || `جزئیات و دانلود فیلم ${title} در فری مووی.`);
+        document.querySelector('meta[property="og:title"]').setAttribute('content', `${title} - فری مووی`);
+        document.querySelector('meta[property="og:description"]').setAttribute('content', movieData.overview || 'جزئیات و دانلود فیلم در فری مووی.');
         document.querySelector('meta[property="og:image"]').setAttribute('content', poster);
-        document.querySelector('meta[name="twitter:title"]').setAttribute('content', `${title} - فیری مووی`);
-        document.querySelector('meta[name="twitter:description"]').setAttribute('content', movieData.overview || 'جزئیات و دانلود فیلم در فیری مووی.');
+        document.querySelector('meta[name="twitter:title"]').setAttribute('content', `${title} - فری مووی`);
+        document.querySelector('meta[name="twitter:description"]').setAttribute('content', movieData.overview || 'جزئیات و دانلود فیلم در فری مووی.');
         document.querySelector('meta[name="twitter:image"]').setAttribute('content', poster);
 
         // Update structured data with TMDb data and OMDB poster

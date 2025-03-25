@@ -93,7 +93,7 @@ function manageSupportPopup() {
     const tweetButton = document.getElementById('tweet-support');
     if (tweetButton) {
         tweetButton.addEventListener('click', () => {
-            const tweetText = encodeURIComponent('من از فیری مووی حمایت می‌کنم! یک سایت عالی برای تماشای فیلم و سریال: https://b2n.ir/freemovie');
+            const tweetText = encodeURIComponent('من از فری مووی حمایت می‌کنم! یک سایت عالی برای تماشای فیلم و سریال: https://b2n.ir/freemovie');
             window.open(`https://twitter.com/intent/tweet?text=${tweetText}`, '_blank');
         });
     }

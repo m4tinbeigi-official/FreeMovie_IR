@@ -12,25 +12,25 @@ async function fetchAndDisplayAboutContent() {
         const data = await response.json();
 
         // Update page title and meta tags
-        document.title = data.title || "درباره فیری مووی";
+        document.title = data.title || "درباره فری مووی";
         const metaDescription = document.querySelector('meta[name="description"]');
-        if (metaDescription) metaDescription.setAttribute("content", data.meta_description || "درباره فیری مووی - اطلاعات بیشتر درباره پلتفرم ما");
+        if (metaDescription) metaDescription.setAttribute("content", data.meta_description || "درباره فری مووی - اطلاعات بیشتر درباره پلتفرم ما");
 
         const ogTitle = document.querySelector('meta[property="og:title"]');
-        if (ogTitle) ogTitle.setAttribute("content", data.title || "درباره فیری مووی");
+        if (ogTitle) ogTitle.setAttribute("content", data.title || "درباره فری مووی");
 
         const ogDescription = document.querySelector('meta[property="og:description"]');
-        if (ogDescription) ogDescription.setAttribute("content", data.meta_description || "درباره فیری مووی - اطلاعات بیشتر درباره پلتفرم ما");
+        if (ogDescription) ogDescription.setAttribute("content", data.meta_description || "درباره فری مووی - اطلاعات بیشتر درباره پلتفرم ما");
 
         const twitterTitle = document.querySelector('meta[name="twitter:title"]');
-        if (twitterTitle) twitterTitle.setAttribute("content", data.title || "درباره فیری مووی");
+        if (twitterTitle) twitterTitle.setAttribute("content", data.title || "درباره فری مووی");
 
         const twitterDescription = document.querySelector('meta[name="twitter:description"]');
-        if (twitterDescription) twitterDescription.setAttribute("content", data.meta_description || "درباره فیری مووی - اطلاعات بیشتر درباره پلتفرم ما");
+        if (twitterDescription) twitterDescription.setAttribute("content", data.meta_description || "درباره فری مووی - اطلاعات بیشتر درباره پلتفرم ما");
 
         // Update content sections
         const aboutTitle = document.getElementById("about-title");
-        if (aboutTitle) aboutTitle.textContent = data.title || "درباره فیری مووی";
+        if (aboutTitle) aboutTitle.textContent = data.title || "درباره فری مووی";
 
         const aboutDescription = document.getElementById("about-description");
         if (aboutDescription) aboutDescription.innerHTML = data.description || "توضیحات در دسترس نیست.";

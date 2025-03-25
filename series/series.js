@@ -91,22 +91,22 @@ async function getSeriesDetails() {
         }
 
         const metaDescription = document.querySelector('meta[name="description"]');
-        if (metaDescription) metaDescription.setAttribute('content', `${seriesData.overview || 'جزئیات و دانلود سریال ' + title + ' در فیری مووی.'}`);
+        if (metaDescription) metaDescription.setAttribute('content', `${seriesData.overview || 'جزئیات و دانلود سریال ' + title + ' در فری مووی.'}`);
 
         const ogTitle = document.querySelector('meta[property="og:title"]');
-        if (ogTitle) ogTitle.setAttribute('content', `${title} - فیری مووی`);
+        if (ogTitle) ogTitle.setAttribute('content', `${title} - فری مووی`);
 
         const ogDescription = document.querySelector('meta[property="og:description"]');
-        if (ogDescription) ogDescription.setAttribute('content', seriesData.overview || 'جزئیات و دانلود سریال در فیری مووی.');
+        if (ogDescription) ogDescription.setAttribute('content', seriesData.overview || 'جزئیات و دانلود سریال در فری مووی.');
 
         const ogImage = document.querySelector('meta[property="og:image"]');
         if (ogImage) ogImage.setAttribute('content', posterUrl);
 
         const twitterTitle = document.querySelector('meta[name="twitter:title"]');
-        if (twitterTitle) twitterTitle.setAttribute('content', `${title} - فیری مووی`);
+        if (twitterTitle) twitterTitle.setAttribute('content', `${title} - فری مووی`);
 
         const twitterDescription = document.querySelector('meta[name="twitter:description"]');
-        if (twitterDescription) twitterDescription.setAttribute('content', seriesData.overview || 'جزئیات و دانلود سریال در فیری مووی.');
+        if (twitterDescription) twitterDescription.setAttribute('content', seriesData.overview || 'جزئیات و دانلود سریال در فری مووی.');
 
         const twitterImage = document.querySelector('meta[name="twitter:image"]');
         if (twitterImage) twitterImage.setAttribute('content', posterUrl);

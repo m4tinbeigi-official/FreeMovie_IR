@@ -2,7 +2,7 @@
 const apiKey = '1dc4cbf81f0accf4fa108820d551dafc'; // کلید API TMDb
 const language = 'fa'; // زبان پارسی
 const baseImageUrl = 'https://image.tmdb.org/t/p/w500'; // آدرس پایه تصاویر TMDb
-const defaultPoster = 'https://m4tinbeigi-official.github.io/freemovie/images/default-freemovie-300.png'; // پوستر پیش‌فرض
+const defaultPoster = 'https://m4tinbeigi-official.github.io/FreeMovie_IR/images/default-freemovie-300.png'; // پوستر پیش‌فرض
 
 // آدرس‌های API TMDb
 const apiUrls = {
